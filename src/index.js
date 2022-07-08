@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react'
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
+import { ColorModeScript } from '@chakra-ui/react';
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -23,6 +24,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
+        <ColorModeScript />
         <App />
     </ChakraProvider>
   </React.StrictMode>
